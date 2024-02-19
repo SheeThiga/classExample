@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACS 355 Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <img src="daystar.png" alt="Daystar Logo" />
+      <br />
+      <br />
+      <div class="container">
+        <h1>ACS 355</h1>
+        <h3>Enter your login credentials</h3>
+        <form action="">
+          <label for="first"> Username: </label>
+          <input
+            type="text"
+            id="first"
+            name="first"
+            placeholder="Enter your Username"
+            required
+          />
+          <br />
+          <br />
+
+          <label for="password"> Password: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          />
+          <br />
+          <br />
+
+          <div class="wrap">
+            <button type="submit" onclick="solve()">Submit</button>
+          </div>
+        </form>
+        <p>
+          Not registered?
+          <a href="#"> Create an account </a>
+        </p>
+      </div>
+    </div>
+    <script>
+        function solve() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "admin" && password == "admin") {
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid credentials");
+            }
+        }
+    </script>
+</html>
+
+
