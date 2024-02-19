@@ -14,11 +14,11 @@
         <h1>ACS 355</h1>
         <h3>Enter your login credentials</h3>
         <form action="">
-          <label for="first"> Username: </label>
+          <label for="username"> Username: </label>
           <input
             type="text"
-            id="first"
-            name="first"
+            id="username"
+            name="username"
             placeholder="Enter your Username"
             required
           />
@@ -46,16 +46,7 @@
         </p>
       </div>
     </div>
-    <script>
-        function solve() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            if (username == "admin" && password == "admin") {
-                window.location.href = "home.html";
-            } else {
-                alert("Invalid credentials");
-            }
-        }
+    <script src="script.js">      
     </script>
 </html>
 
