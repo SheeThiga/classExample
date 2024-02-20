@@ -4,6 +4,7 @@ function solve() {
 
   if (username === "admin" && password === "admin") {
     window.location.href = "home.html";
+    alert("Login successful");
   } else {
     alert("Invalid credentials");
   }
